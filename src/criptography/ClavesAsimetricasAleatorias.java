@@ -24,7 +24,7 @@ import java.security.spec.PKCS8EncodedKeySpec;
  *
  * @author andresbailen93
  */
-public class ClavesAsimetricas {
+public class ClavesAsimetricasAleatorias {
 
     final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
 

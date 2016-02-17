@@ -15,12 +15,13 @@ import javax.crypto.spec.SecretKeySpec;
  *
  * @author andresbailen93
  */
-public class ClavesSimetricas {
+public class ClavesSimetricasAleatorias {
 
     final protected static char[] hexArray = "0123456789ABCDEF".toCharArray();
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
-        //GENERADOR DE CLAVES SIMETRICAS
+        
+        //************************GENERADOR DE CLAVES SIMETRICAS
         // Creamos nuestra clave
         String sk = "0123456789ABCDEF0123456789ABCDEF";
         //Imprimimos la clave para compararla en consola
@@ -31,7 +32,7 @@ public class ClavesSimetricas {
         //imprimimos la clave de nuevo para ver que es la misma clave que hemos creado
         System.out.println(bytesToHexString(secretKey.getEncoded()));
 
-        //GENERADOR DE CLAVES SIMETRICAS ALEATORIAS
+        //***********************GENERADOR DE CLAVES SIMETRICAS ALEATORIAS
 
         KeyGenerator keyGen = KeyGenerator.getInstance("AES");
         SecureRandom random = new SecureRandom(); 
